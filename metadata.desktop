@@ -1,0 +1,5 @@
+[Desktop Entry]
+Name=Thème Nuks SDDM
+Description=Thème personnalisé pour SDDM avec des boutons animés et un fond d'écran sélectionnable
+Type=Theme
+After=sddm-greeter
