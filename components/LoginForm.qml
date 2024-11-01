@@ -32,14 +32,13 @@ Column {
     }
 
     // Style commun pour les champs de texte
-    // Style commun pour les champs de texte
     component CustomTextField : TextField {
         height: 40
         width: parent.width
         color: inputTextColor
         font.pixelSize: 16
         
-        property string placeholderTextCustom: ""  // Nouvelle propriété
+        property string placeholderTextCustom: ""
 
         // Placeholder text personnalisé
         Text {
@@ -63,14 +62,14 @@ Column {
 
     CustomTextField {
         id: usernameField
-        placeholderTextCustom: "Nom d'utilisateur"  // Utilise la nouvelle propriété
+        placeholderTextCustom: "Nom d'utilisateur"
         onAccepted: passwordField.forceActiveFocus()
         onTextChanged: showError = false
     }
 
     CustomTextField {
         id: passwordField
-        placeholderTextCustom: "Mot de passe"  // Utilise la nouvelle propriété
+        placeholderTextCustom: "Mot de passe"
         echoMode: TextInput.Password
         onAccepted: loginForm.tryLogin()
         onTextChanged: showError = false
